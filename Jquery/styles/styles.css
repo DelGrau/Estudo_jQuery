@@ -27,3 +27,17 @@ button {
 .green{
     background-color: green;
 }
+
+#clicker, #slider {
+    padding: 5px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+
+}
+
+#slider{
+    display: none;
+    padding: 50px;
+}
