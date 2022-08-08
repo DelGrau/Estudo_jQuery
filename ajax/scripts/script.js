@@ -21,6 +21,7 @@ $(document).ready(function() {
 
     $('#busca').keyup(function (){
         var valor_busca = $(this).val().toLowerCase()
+        //Passamos o ID e qual o elemento vamos fazer a procura
         $('#lista li').filter( function() {
             $(this).toggle($(this).text().toLocaleLowerCase().indexOf(valor_busca) > -1)
         })
