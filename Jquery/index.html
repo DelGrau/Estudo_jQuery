@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando jQuery</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Estudando jQuery</h1>
+
+    <p id="hover">Apenas um paragrafo comun</p>
+    <p id="teste">Isso é um paragrafo com id</p>
+    <p class="p-yellow"> Olá</p>
+    
+    <button id="botao" style="padding: 40px;">Clique Aqui</button>
+    <button id="bt_teste">Clique</button>
+
+    <hr>
+
+    <div class="d-inline red"></div>        
+    <div class="d-inline blue"></div>
+    <div class="d-inline green"></div>
+
+    <hr>
+
+    <button id="bt_hide">Esconder</button>
+    <button id="bt_show">Mostrar</button>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/button.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#botao').click(function() {
+                $('#teste').html('Mudei meu texto')
+            });
+
+            $('.p-yellow').click(function(){
+                $(this).html('Mudando um texto com um click')
+            });
+
+            $('#hover').hover(function(){
+                $(this).text('Mouse em cima do texto');
+            }, 
+                function () {
+                    $(this).text('Mouse Saiu');
+                }
+            );
+        });
+    
+    </script>
+</body>
+</html>
