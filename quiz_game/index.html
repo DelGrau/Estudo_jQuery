@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Quiz Game</title>
 </head>
 <body>
-    
+    <div class="game">
+        <h2 id="pergunta">Perguntas vão aqui</h2>
+        <div id="respostas">
+           <button id="resp0" class="resposta">Resposta 1</button>
+           <button id="resp1" class="resposta">Resposta 2</button>
+           <button id="resp2" class="resposta">Resposta 3</button>
+           <button id="resp3" class="resposta">Resposta 4</button>
+        </div>
+        <br><br>
+        <button id="confirm">Confirmar</button>   
+    </div>
+    <div class="status oculto">
+        <h2 id="title_status">Game Over</h2>
+        <button id="novo_jogo">Novo Jogo</button>
+    </div>
+    <script src="../Jquery/js/jquery-3.6.0.js"></script>
+    <script src="scripts/game.js"></script>
 </body>
 </html>
