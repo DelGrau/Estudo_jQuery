@@ -73,12 +73,12 @@ function gerarPergunta(max_perguntas){
     }else{
         //SE A PERGUNTA JÁ FOI FEITA
         console.log('A pergunta ja foi feita gerando outra')
-        if(pergunta_feitas.length< qtd_perguntas + 1){
+        if(perguntas_feitas.length< qtd_perguntas + 1){
             return gerarPergunta(max_perguntas)
         }else{
             console.log('Acabou o jogo!')
             $('.game').addClass('oculto')
-            $('title_status').html('PARABENS VOCÊ GANHOU')
+            $('#title_status').html('PARABENS VOCÊ GANHOU')
             $('.status').removeClass('oculto')
         }
     }
